@@ -6,6 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         text: 'var(--color-text)',
+        textHeader: 'var(--color-text-header)',
         error: 'var(--color-error)',
         paper: 'var(--color-paper)',
         primary: 'var(--color-primary)',
