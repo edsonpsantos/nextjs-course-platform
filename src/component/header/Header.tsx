@@ -1,10 +1,16 @@
 'use client'
+import { useEffect, useState } from 'react'
 import { MdMenu, MdOutlineOpenInNew } from 'react-icons/md'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 export const Header = () => {
+  const [title, setTitle] = useState('Home')
   const currentPath = usePathname()
+
+  useEffect(() => {
+    setTitle(document.title)
+  }, [currentPath])
 
   return (
     <nav className='flex items-center justify-start gap-4 md:justify-center bg-primary text-textHeader py-2 sm:py-4 px-6'>
@@ -34,7 +40,7 @@ export const Header = () => {
           </Link>
         </li>
       </ul>
-      {/* <h1 className='sm:hidden'>Home</h1> */}
+      <h1 className='sm:hidden'>{title}</h1>
     </nav>
   )
 }
