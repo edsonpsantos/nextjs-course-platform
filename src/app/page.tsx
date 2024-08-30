@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function PageHome() {
   return (
     <main>
-      <Card />
+      <Card image='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg' title='' description='' href='/cursos/123' />
     </main>
   )
 }
