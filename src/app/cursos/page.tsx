@@ -1,3 +1,4 @@
+import { Section } from '@/component/section/Section'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -5,5 +6,9 @@ export const metadata: Metadata = {
 }
 
 export default function PageCursos() {
-  return <main>Cursos</main>
+  return (
+    <main>
+      <Section variant='grid' title='Todos os cursos' />
+    </main>
+  )
 }
