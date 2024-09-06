@@ -7,8 +7,43 @@ export const metadata: Metadata = {
 
 export default function PageCursos() {
   return (
-    <main>
-      <Section variant='grid' title='Todos os cursos' />
+    <main className='mt-8 flex justify-center'>
+      <div className='min-[880px]:max-w-[880px]'>
+        <Section
+          variant='grid'
+          title='Todos os cursos'
+          items={[
+            {
+              href: '/cursos/123',
+              image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
+              title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              description:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
+            },
+            {
+              href: '/cursos/123',
+              image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
+              title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              description:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
+            },
+            {
+              href: '/cursos/123',
+              image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
+              title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              description:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
+            },
+            {
+              href: '/cursos/123',
+              image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
+              title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              description:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
+            }
+          ]}
+        />
+      </div>
     </main>
   )
 }
