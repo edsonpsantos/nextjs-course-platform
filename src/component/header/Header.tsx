@@ -42,7 +42,7 @@ export const Header = () => {
             </Link>
           </li>
           <li className='hidden sm:block'>
-            <Link href='/cursos' data-active={currentPath === '/cursos'} className={'data-[active=true]:underline'}>
+            <Link href='/courses' data-active={currentPath === '/courses'} className={'data-[active=true]:underline'}>
               Cursos
             </Link>
           </li>
@@ -75,8 +75,8 @@ export const Header = () => {
             </li>
             <li className=''>
               <Link
-                href='/cursos'
-                data-active={currentPath === '/cursos'}
+                href='/courses'
+                data-active={currentPath === '/courses'}
                 className={'data-[active=true]:underline outline-offset-4'}
               >
                 Cursos
