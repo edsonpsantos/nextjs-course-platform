@@ -27,5 +27,29 @@ a {
 }
 
 .buttonSlide {
-    @apply w-14 h-14 bg-primary rounded-full flex items-center justify-center sticky my-auto -ml-14 
+    @apply w-14 h-14 bg-primary rounded-full hidden sm:flex items-center justify-center sticky my-auto -ml-14 disabled:opacity-0 transition-opacity active:opacity-85 
+}
+
+.overflow-primary::-webkit-scrollbar-thumb{
+    @apply bg-primary
+}
+
+*::-webkit-scrollbar{
+    @apply h-3 w-2
+}
+
+*::-webkit-scrollbar-button{
+    @apply hidden
+}
+
+*::-webkit-scrollbar-corner {
+    @apply bg-transparent
+}
+
+*::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-paper
+}
+
+*::-webkit-scrollbar-track{
+    @apply bg-transparent
 }
