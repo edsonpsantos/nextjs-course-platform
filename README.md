@@ -1,5 +1,5 @@
 # NEXTCourse Platform
-## 📱 About this project
+## 👨🏽‍💻 About this project
 
 
 The repository contains all code based on NEXTJS, Typescript, TailwindCSS and Youtube API.
