@@ -25,3 +25,7 @@ body {
 a {
     @apply hover:underline active:opacity-50 transition-opacity
 }
+
+.buttonSlide {
+    @apply w-14 h-14 bg-primary rounded-full flex items-center justify-center sticky my-auto -ml-14 
+}

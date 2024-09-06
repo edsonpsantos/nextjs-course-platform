@@ -16,28 +16,28 @@ export default function PageHome() {
             {
               href: '/cursos/123',
               image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
-              title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              title: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit',
               description:
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
             },
             {
               href: '/cursos/123',
               image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
-              title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              title: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit',
               description:
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
             },
             {
               href: '/cursos/123',
               image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
-              title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              title: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit',
               description:
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
             },
             {
               href: '/cursos/123',
               image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
-              title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              title: '4 Lorem ipsum dolor sit amet consectetur adipisicing elit',
               description:
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
             }
