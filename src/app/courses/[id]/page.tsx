@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 import { CourseHeader } from '@/component/course-header/CourseHeader'
 import { StartCourse } from '@/component/StartCourse'
-import { Class } from '@/component/course-content/components/Class'
+import { ClassGRoup } from '@/component/course-content/components/ClassGroup'
 
 interface Props {
   params: { id: string }
@@ -28,9 +28,22 @@ export default function PageCourseDetails({ params }: Props) {
             imageUrl='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg'
           />
         </div>
-        <div className='flex-[2]'>
+        <div className='flex flex-[2] flex-col gap-4'>
           <CourseHeader />
-          <Class title='Lorem ipsum dolor sit amet consectetur' playerUrl='/player/{courseId}/{classId}' />
+          <ClassGRoup
+            title='Lorem ipsum dolor sit amet consectetur'
+            courseId='123'
+            classes={[
+              {
+                id: '234',
+                title: 'Lorem ipsum dolor sit amet consectetur'
+              },
+              {
+                id: '456',
+                title: 'Lorem ipsum dolor sit amet consectetur'
+              }
+            ]}
+          />
         </div>
       </div>
     </main>
