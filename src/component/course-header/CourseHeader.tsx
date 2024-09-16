@@ -1,4 +1,6 @@
+import { MdShare } from 'react-icons/md'
 import { CollapsibleText } from './components/CollapsibleText'
+import { CopyContent } from './components/CopyContent'
 
 export const CourseHeader = () => {
   return (
@@ -17,8 +19,13 @@ export const CourseHeader = () => {
         #NEXTCourse
       </CollapsibleText>
 
-      <div className='flex flex-row gap-2 items-center'>
-        <button className='py-2 px-4 bg-paper rounded-full'>Compartilhar</button>
+      <div className='flex items-center flex-row gap-2'>
+        <CopyContent title='Copie o link abaixo' content='Content to copy'>
+          <button className='flex items-center gap-2 px-4 py-2 bg-paper rounded-full'>
+            <MdShare />
+            Compartilhar
+          </button>
+        </CopyContent>
         <span>48 aulas</span>
       </div>
     </div>
