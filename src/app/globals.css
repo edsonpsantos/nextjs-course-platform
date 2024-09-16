@@ -26,6 +26,10 @@ a {
     @apply hover:underline active:opacity-50 transition-opacity
 }
 
+button {
+    @apply hover:opacity-50 transition-opacity
+}
+
 .buttonSlide {
     @apply w-14 h-14 bg-primary rounded-full hidden sm:flex items-center justify-center sticky my-auto -ml-14 disabled:opacity-0 transition-opacity active:opacity-85 
 }
