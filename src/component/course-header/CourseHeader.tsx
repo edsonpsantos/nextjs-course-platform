@@ -5,7 +5,7 @@ import { CopyContent } from './components/CopyContent'
 export const CourseHeader = () => {
   return (
     <div className='flex flex-col gap-2'>
-      <h1 className='font-extrabold text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+      <h1 className='font-extrabold text-xl'>👨🏽‍💻 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
 
       <CollapsibleText numberOfLinesWhenClosed={3}>
         Deleniti eos dicta ullam id autem dignissimos cum. Velit, suscipit enim qui omnis eveniet deleniti, et illo ex,

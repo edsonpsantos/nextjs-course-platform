@@ -19,7 +19,19 @@ export default function PageCourseDetails({ params }: Props) {
   return (
     <main className='mt-8 flex justify-center'>
       <div className='flex flex-col gap-4 w-full min-[880px]:max-w-[880px] px-2'>
-        <StartCourse idClass='1' idCourse='1' imageUrl='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg' />
+        <StartCourse
+          idClass='1'
+          idCourse='1'
+          title='👨🏽‍💻 Lorem ipsum dolor sit amet consectetur'
+          imageUrl='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg'
+        />
+        <CourseHeader />
+        <CourseHeader />
+        <CourseHeader />
+        <CourseHeader />
+        <CourseHeader />
+        <CourseHeader />
+        <CourseHeader />
         <CourseHeader />
       </div>
     </main>
