@@ -1,11 +1,13 @@
 import { Metadata } from 'next'
 
+import { CourseHeader } from '@/component/course-header/CourseHeader'
+
 interface Props {
   params: { id: string }
 }
 
-export async function generateMetadata({ params }: Props) {
-  //Ir a API do YOUTUBE e pegar os dados do curso
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  //Go to YOUTUBE API and get course informations
   return {
     title: params.id,
     description: params.id
@@ -15,7 +17,9 @@ export async function generateMetadata({ params }: Props) {
 export default function PageCourseDetails({ params }: Props) {
   return (
     <main className='mt-8 flex justify-center'>
-      <h1>Detalhe de Curso - {params.id}</h1>
+      <div className='w-full min-[880px]:max-w-[880px]'>
+        <CourseHeader />
+      </div>
     </main>
   )
 }
