@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 
 import { CourseHeader } from '@/component/course-header/CourseHeader'
 import { StartCourse } from '@/component/StartCourse'
+import { Class } from '@/component/course-content/components/Class'
 
 interface Props {
   params: { id: string }
@@ -29,13 +30,7 @@ export default function PageCourseDetails({ params }: Props) {
         </div>
         <div className='flex-[2]'>
           <CourseHeader />
-          <CourseHeader />
-          <CourseHeader />
-          <CourseHeader />
-          <CourseHeader />
-          <CourseHeader />
-          <CourseHeader />
-          <CourseHeader />
+          <Class title='Lorem ipsum dolor sit amet consectetur' playerUrl='/player/{courseId}/{classId}' />
         </div>
       </div>
     </main>
