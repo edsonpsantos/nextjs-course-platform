@@ -18,21 +18,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function PageCourseDetails({ params }: Props) {
   return (
     <main className='mt-8 flex justify-center'>
-      <div className='flex flex-col gap-4 w-full min-[880px]:max-w-[880px] px-2'>
-        <StartCourse
-          idClass='1'
-          idCourse='1'
-          title='👨🏽‍💻 Lorem ipsum dolor sit amet consectetur'
-          imageUrl='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg'
-        />
-        <CourseHeader />
-        <CourseHeader />
-        <CourseHeader />
-        <CourseHeader />
-        <CourseHeader />
-        <CourseHeader />
-        <CourseHeader />
-        <CourseHeader />
+      <div className='flex flex-col md:flex-row-reverse lg:px-0 px-2 gap-4 w-full min-[880px]:max-w-[880px]  '>
+        <div className='flex-1'>
+          <StartCourse
+            idClass='1'
+            idCourse='1'
+            title='👨🏽‍💻 Lorem ipsum dolor sit amet consectetur'
+            imageUrl='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg'
+          />
+        </div>
+        <div className='flex-[2]'>
+          <CourseHeader />
+          <CourseHeader />
+          <CourseHeader />
+          <CourseHeader />
+          <CourseHeader />
+          <CourseHeader />
+          <CourseHeader />
+          <CourseHeader />
+        </div>
       </div>
     </main>
   )
