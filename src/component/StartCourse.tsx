@@ -27,7 +27,7 @@ export const StartCourse = ({ idClass, idCourse, imageUrl, title }: IStartCourse
           </div>
         </Link>
         <Link
-          className='bg-primary p-2 px-3 rounded text-center hover:no-underline'
+          className='bg-primary p-2 px-3 rounded text-center text-background hover:no-underline'
           href={`/player/${idCourse}/${idClass}`}
         >
           Começar curso
@@ -38,7 +38,7 @@ export const StartCourse = ({ idClass, idCourse, imageUrl, title }: IStartCourse
         <div className='flex flex-col gap-4 bg-paper p-3 px-2 absolute left-0 right-0 top-14 transition-opacity'>
           <h1 className='font-extrabold text-xl'>{title}</h1>
           <Link
-            className='bg-primary p-2 px-3 rounded text-center hover:no-underline'
+            className='bg-primary p-2 px-3 rounded text-center text-background hover:no-underline'
             href={`/player/${idCourse}/${idClass}`}
           >
             Começar curso

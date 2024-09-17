@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
+import { CourseContent } from '@/component/course-content/CourseContent'
 import { CourseHeader } from '@/component/course-header/CourseHeader'
 import { StartCourse } from '@/component/StartCourse'
-import { ClassGRoup } from '@/component/course-content/components/ClassGroup'
 
 interface Props {
   params: { id: string }
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function PageCourseDetails({ params }: Props) {
   return (
     <main className='mt-8 flex justify-center'>
-      <div className='flex flex-col md:flex-row-reverse lg:px-0 px-2 gap-4 w-full min-[880px]:max-w-[880px]  '>
+      <div className='flex flex-col md:flex-row-reverse lg:px-0 px-2 gap-4 w-full min-[880px]:max-w-[880px]'>
         <div className='flex-1'>
           <StartCourse
             idClass='1'
@@ -28,19 +28,41 @@ export default function PageCourseDetails({ params }: Props) {
             imageUrl='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg'
           />
         </div>
-        <div className='flex flex-[2] flex-col gap-4'>
+        <div className='flex flex-[2] flex-col gap-12'>
           <CourseHeader />
-          <ClassGRoup
-            title='Lorem ipsum dolor sit amet consectetur'
-            courseId='123'
-            classes={[
+          <CourseContent
+            classGroups={[
               {
-                id: '234',
-                title: 'Lorem ipsum dolor sit amet consectetur'
+                courseId: ' 123',
+                title: 'Lorem ipsum dolor sit amet consectetur',
+                classes: [
+                  {
+                    id: '234',
+                    title: 'Lorem ipsum dolor sit amet consectetur'
+                  },
+                  {
+                    id: '456',
+                    title: 'Lorem ipsum dolor sit amet consectetur'
+                  }
+                ]
               },
               {
-                id: '456',
-                title: 'Lorem ipsum dolor sit amet consectetur'
+                courseId: ' 123',
+                title: 'XPTO Lorem ipsum dolor sit amet consectetur',
+                classes: [
+                  {
+                    id: '789',
+                    title: 'XPTO Lorem ipsum dolor sit amet consectetur'
+                  },
+                  {
+                    id: '987',
+                    title: 'XPTOLorem ipsum dolor sit amet consectetur'
+                  },
+                  {
+                    id: '654',
+                    title: 'XPTOLorem ipsum dolor sit amet consectetur'
+                  }
+                ]
               }
             ]}
           />
