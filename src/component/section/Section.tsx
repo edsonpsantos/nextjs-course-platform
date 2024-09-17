@@ -39,12 +39,8 @@ export const Section = ({ title, variant, items }: ISectionProps) => {
         data-variant={variant}
       >
         {variant === 'h-list' && (
-          <button
-            disabled={scrollAt === 'start'}
-            className='buttonSlide left-0'
-            onClick={() => handleSetScroll(-350)}
-          >
-            <MdKeyboardArrowLeft size={38} />
+          <button disabled={scrollAt === 'start'} className='buttonSlide left-0' onClick={() => handleSetScroll(-350)}>
+            <MdKeyboardArrowLeft size={38} color='black' />
           </button>
         )}
 
@@ -55,12 +51,8 @@ export const Section = ({ title, variant, items }: ISectionProps) => {
             </li>
           ))}
         {variant === 'h-list' && (
-          <button
-            disabled={scrollAt === 'end'}
-            className='buttonSlide right-0'
-            onClick={() => handleSetScroll(350)}
-          >
-            <MdKeyboardArrowRight size={38} />
+          <button disabled={scrollAt === 'end'} className='buttonSlide right-0' onClick={() => handleSetScroll(350)}>
+            <MdKeyboardArrowRight size={38} color='black' />
           </button>
         )}
       </ul>
