@@ -3,6 +3,8 @@ import { Metadata } from 'next'
 import { CourseContent } from '@/component/course-content/CourseContent'
 import { CourseHeader } from '@/component/course-header/CourseHeader'
 import { StartCourse } from '@/component/StartCourse'
+import { time } from 'console'
+import { title } from 'process'
 
 interface Props {
   params: { id: string }
@@ -28,8 +30,20 @@ export default function PageCourseDetails({ params }: Props) {
             imageUrl='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg'
           />
         </div>
-        <div className='flex flex-[2] flex-col gap-12'>
-          <CourseHeader />
+        <div className='flex flex-[2] flex-col gap-12 pb-12'>
+          <CourseHeader
+            title='👨🏽‍💻 Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            description='Deleniti eos dicta ullam id autem dignissimos cum. Velit, suscipit enim qui omnis eveniet deleniti, et illo ex,
+        illum adipisci quaerat sapiente. Deleniti eos dicta ullam id autem dignissimos cum. Velit, suscipit enim qui
+        omnis eveniet deleniti, et illo ex, illum adipisci quaerat sapiente. Deleniti eos dicta ullam id autem
+        dignissimos cum. Velit, suscipit enim qui omnis eveniet deleniti, et illo ex, illum adipisci quaerat sapiente.
+        Deleniti eos dicta ullam id autem dignissimos cum. Velit, suscipit enim qui omnis eveniet deleniti, et illo ex,
+        illum adipisci quaerat sapiente. Deleniti eos dicta ullam id autem dignissimos cum. Velit, suscipit enim qui
+        omnis eveniet deleniti, et illo ex, illum adipisci quaerat sapiente. Deleniti eos dicta ullam id autem
+        dignissimos cum. Velit, suscipit enim qui omnis eveniet deleniti, et illo ex, illum adipisci quaerat sapiente.
+        #NEXTCourse'
+        numberOfClasses={48}
+          />
           <CourseContent
             classGroups={[
               {
