@@ -30,7 +30,10 @@ export const StartCourse = ({ idClass, idCourse, imageUrl, title }: IStartCourse
           className='bg-primary p-2 px-3 rounded text-center text-background hover:no-underline'
           href={`/player/${idCourse}/${idClass}`}
         >
-          Começar curso
+          <div className='flex items-center justify-center gap-2'>
+            Começar curso
+            <MdPlayCircleOutline size={28} />
+          </div>
         </Link>
       </div>
 
@@ -41,7 +44,10 @@ export const StartCourse = ({ idClass, idCourse, imageUrl, title }: IStartCourse
             className='bg-primary p-2 px-3 rounded text-center text-background hover:no-underline'
             href={`/player/${idCourse}/${idClass}`}
           >
-            Começar curso
+            <div className='flex items-center justify-center gap-2'>
+              Começar curso
+              <MdPlayCircleOutline size={28} />
+            </div>
           </Link>
         </div>
       )}

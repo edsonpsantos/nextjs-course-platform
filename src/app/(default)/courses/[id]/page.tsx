@@ -30,6 +30,7 @@ export default function PageCourseDetails({ params }: Props) {
             imageUrl='https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg'
           />
         </div>
+        
         <div className='flex flex-[2] flex-col gap-12 pb-12'>
           <CourseHeader
             title='👨🏽‍💻 Lorem ipsum dolor sit amet consectetur adipisicing elit.'
@@ -42,13 +43,13 @@ export default function PageCourseDetails({ params }: Props) {
         omnis eveniet deleniti, et illo ex, illum adipisci quaerat sapiente. Deleniti eos dicta ullam id autem
         dignissimos cum. Velit, suscipit enim qui omnis eveniet deleniti, et illo ex, illum adipisci quaerat sapiente.
         #NEXTCourse'
-        numberOfClasses={48}
+            numberOfClasses={48}
           />
           <CourseContent
             classGroups={[
               {
                 courseId: ' 123',
-                title: 'Lorem ipsum dolor sit amet consectetur',
+                title: 'Learn GIT and Source Control for FREE online',
                 classes: [
                   {
                     id: '234',
@@ -62,7 +63,7 @@ export default function PageCourseDetails({ params }: Props) {
               },
               {
                 courseId: ' 123',
-                title: 'XPTO Lorem ipsum dolor sit amet consectetur',
+                title: 'How to set up Github, Xcode Source Control',
                 classes: [
                   {
                     id: '789',

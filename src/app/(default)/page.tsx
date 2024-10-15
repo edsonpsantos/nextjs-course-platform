@@ -11,9 +11,8 @@ export default function PageHome() {
   return (
     <main className='mt-8 flex justify-center'>
       <div className='min-[880px]:max-w-[880px] w-full flex flex-col gap-4'>
-        
         <KeepWatching />
-        
+
         <Section
           variant='h-list'
           title='Veja mais cursos'
@@ -21,7 +20,7 @@ export default function PageHome() {
             {
               href: '/courses/123',
               image: 'https://i.ytimg.com/vi/_H8_IU1G8G0/hqdefault.jpg',
-              title: '📱 1 Lorem ipsum dolor sit amet consectetur adipisicing elit',
+              title: '📱 Git & Source Control',
               description:
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id quibusdam ut quam dolorem unde velit deleniti! Assumenda, ducimus voluptatibus, impedit fugit id recusandae qui minima tempora maxime ab expedita?'
             },
