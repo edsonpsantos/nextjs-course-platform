@@ -1,5 +1,5 @@
 'use client'
-import { PlayerClass, PlayerHeader } from '@/component/player'
+import { PlayerClassGroup, PlayerHeader } from '@/component/player'
 
 interface Props {
   params: {
@@ -9,19 +9,24 @@ interface Props {
 }
 export default function PagePlayer({ params: { courseId, classId } }: Props) {
   return (
-    <>
+    <main className='flex flex-col gap-20'>
       <PlayerHeader
         title='Git & Source Control (Beginner Level)'
         subTitle='🚀 How to Create and Clone a Remote Repository'
       />
 
-      <PlayerClass
-        title='Learn GIT and Source Control for FREE online'
-        isPlaying={false}
-        isDone={false}
-        onCheck={() => console.log('check')}
-        onPlay={() => console.log('play')}
+      <PlayerClassGroup
+        isOpen={true}
+        onToogle={() => console.log('toogle')}
+        title='Git & Source Control (Beginner Level)'
+        position={1}
+        classes={[
+          { isDone: true, isPlaying: false, title: 'Learn GIT and Source Control for FREE online1' },
+          { isDone: false, isPlaying: true, title: 'Learn GIT and Source Control for FREE online2' },
+          { isDone: false, isPlaying: false, title: 'Learn GIT and Source Control for FREE online3' },
+          { isDone: false, isPlaying: false, title: 'Learn GIT and Source Control for FREE online4' }
+        ]}
       />
-    </>
+    </main>
   )
 }
